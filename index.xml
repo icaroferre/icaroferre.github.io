@@ -1,13 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Icaro Ferre on Icaro Ferre </title>
-      <generator uri="https://gohugo.io">Hugo</generator>
+    <title>Icaro Ferre</title>
     <link>http://icaroferre.github.io/</link>
+    <description>Recent content on Icaro Ferre</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
+	<atom:link href="http://icaroferre.github.io/index.xml" rel="self" type="application/rss+xml" />
     
-    <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
     
   </channel>
 </rss>
-
