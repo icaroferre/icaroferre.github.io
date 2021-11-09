@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>/jekyll/update/2021/11/09/welcome-to-jekyll.html</loc>
+<lastmod>2021-11-09T15:45:38-03:00</lastmod>
+</url>
+<url>
+<loc>/projects/acdgen_hardware/</loc>
+<lastmod>2021-11-09T19:24:58-03:00</lastmod>
+</url>
+<url>
+<loc>/projects/recodrum_2020/</loc>
+<lastmod>2021-11-09T19:24:58-03:00</lastmod>
+</url>
+<url>
+<loc>/about/</loc>
+</url>
+<url>
+<loc>/_projects/acdgen_hardware.html</loc>
+</url>
+<url>
+<loc>/</loc>
+</url>
+<url>
+<loc>/music/</loc>
+</url>
+<url>
+<loc>/projects/</loc>
+</url>
+<url>
+<loc>/_projects/recodrum_2020.html</loc>
+</url>
+<url>
+<loc>/tech/</loc>
+</url>
+</urlset>
