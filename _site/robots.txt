@@ -1,1 +1,1 @@
-Sitemap: /sitemap.xml
+Sitemap: icaroferre.github.io/icaroferre.github.io/sitemap.xml

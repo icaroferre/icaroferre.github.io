@@ -47,7 +47,7 @@ footer:
 
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
+  # - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-remote-theme
