@@ -1,1 +1,1 @@
-Sitemap: icaroferre.github.io/icaroferre.github.io/sitemap.xml
+Sitemap: http://localhost:4000/icaroferre.github.io/sitemap.xml
