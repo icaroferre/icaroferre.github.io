@@ -31,6 +31,8 @@ github_username:  icaroferre
 
 # Build settings
 # theme: minimal-mistakes-jekyll
+
+remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 
 footer:
@@ -52,8 +54,6 @@ plugins:
   - jekyll-paginate
   - jekyll-remote-theme
   - jekyll-include-cache
-
-remote_theme: mmistakes/minimal-mistakes
 
 
 defaults:
