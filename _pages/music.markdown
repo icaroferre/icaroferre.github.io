@@ -98,17 +98,17 @@ toc_icon: "music"
 ![image-center](/assets/images/Samplesviewvol3.jpg){: .align-center}
 
 **[Spotify](https://open.spotify.com/album/1LTPAF2WPIczS9b8oHhRqK?si=qO_TyTnETo6Kp701xluQ_w)**
-| **[Apple Music](https://open.spotify.com/album/1LTPAF2WPIczS9b8oHhRqK?si=qO_TyTnETo6Kp701xluQ_w)**
+| **[Apple Music](https://geo.music.apple.com/us/album/samplerview-vol-3/1488122720?itsct=music_box_link&itscg=30200&ls=1&app=music)**
 
 **Released on:** Playperview
 
 **Track title:** 13 - Cool Like Us
 
-## Chris Psicoff - Psicoff Remix
+## Chris Psicoff - Psicoff Remix - 2017
 
 ![image-center](/assets/images/PsicoffRemix.jpg){: .align-center}
 
 **[Spotify](https://open.spotify.com/album/0RfkPg5nazzpRgNvbLPPU7?si=PCSvQggqQIqEh6T7lJN91w)**
-| **[Apple Music](https://open.spotify.com/album/1LTPAF2WPIczS9b8oHhRqK?si=qO_TyTnETo6Kp701xluQ_w)**
+| **[Apple Music](https://geo.music.apple.com/us/album/psicoff-remix-ep/1261163228?itsct=music_box_link&itscg=30200&ls=1&app=music)**
 
 **Track title:** 1 - Whisper (Icaro Ferre Remix)
