@@ -12,7 +12,7 @@ $code-background-color: mix(#000, $background-color, 15%) !default;
 $code-background-color-dark: mix(#000, $background-color, 20%) !default;
 $form-background-color: mix(#000, $background-color, 15%) !default;
 $footer-background-color: mix(#000, $background-color, 30%) !default;
-$link-color: #fff !default;
+$link-color: mix(#fff, $primary-color, 75%) !default;
 $link-color-hover: mix(#fff, $link-color, 25%) !default;
 $link-color-visited: mix(#000, $link-color, 25%) !default;
 $masthead-link-color: $text-color !default;
@@ -35,7 +35,7 @@ $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
 a:visited, a:link, a:active
   {
       text-decoration: none;
-      color: #FFFFFF;
+      // color: #FFFFFF;
   }
 
 a:hover {
