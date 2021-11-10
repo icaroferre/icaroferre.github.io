@@ -34,6 +34,10 @@ header:
 
 **Project URL:** [http://spektroaudio.com/acdgen-hardware-edition](http://spektroaudio.com/acdgen-hardware-edition)
 
+## Video
+
+{% include video id="JEU8XNG6-uc" provider="youtube" %}
+
 ## Description
 
 ACDGEN – Hardware Edition is a limited edition standalone hardware MIDI Pattern algorithmic generator that lets you use different algorithms to create 16th-note, acid-style, basslines and melodies with a push of a button and manipulate them live using the different parameters available. You can use ACDGEN to create anything from acid house basslines to lush synth arpeggios.

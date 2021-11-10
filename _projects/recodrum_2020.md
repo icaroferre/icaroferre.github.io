@@ -11,23 +11,6 @@ header:
   actions:
     - label: "Check Website"
       url: "https://www.recosynth.com/product-page/new-recodrum"
-# sidebar:
-#   - title: "Role"
-#     image: http://placehold.it/350x250
-#     image_alt: "logo"
-#     text: "Designer, Front-End Developer"
-#   - title: "Responsibilities"
-#     text: "Reuters try PR stupid commenters should isn't a business model"
-# gallery:
-#   - url: /assets/images/unsplash-gallery-image-1.jpg
-#     image_path: assets/images/unsplash-gallery-image-1-th.jpg
-#     alt: "placeholder image 1"
-#   - url: /assets/images/unsplash-gallery-image-2.jpg
-#     image_path: assets/images/unsplash-gallery-image-2-th.jpg
-#     alt: "placeholder image 2"
-#   - url: /assets/images/unsplash-gallery-image-3.jpg
-#     image_path: assets/images/unsplash-gallery-image-3-th.jpg
-#     alt: "placeholder image 3"
 ---
 
 ![image-center](https://static.wixstatic.com/media/b92cd0_fcc4f92b0214403b8b297532525e38e7~mv2.jpg/v1/fill/w_676,h_652,al_c,q_85,usm_0.66_1.00_0.01/b92cd0_fcc4f92b0214403b8b297532525e38e7~mv2.jpg){: .align-center}
@@ -35,6 +18,11 @@ header:
 ## Info
 
 **Project URL:** [https://www.recosynth.com/product-page/new-recodrum](https://www.recosynth.com/product-page/new-recodrum)
+
+
+## Video
+
+{% include video id="lSIXakxuSg0" provider="youtube" %}
 
 ## Description
 

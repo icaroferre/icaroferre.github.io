@@ -7,5 +7,7 @@ main:
     url: projects
   - title: "Open Source"
     url: opensource
+  - title: "Press"
+    url: press
   - title: "Spektro Audio"
     url: "http://spektroaudio.com"

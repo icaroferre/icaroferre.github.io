@@ -2,6 +2,9 @@
 layout: single
 title: Music
 permalink: /music/
+toc: true
+toc_label: "Releases"
+toc_icon: "music"
 ---
 
 ----
@@ -78,4 +81,34 @@ permalink: /music/
 
 ----
 
-<!-- # Singles -->
+# Singles & Features
+
+## Out of the Box - 2020
+
+![image-center](/assets/images/OutOfTheBox.jpg){: .align-center}
+
+**[Bandcamp](https://treemastering.bandcamp.com/album/out-of-the-box-vol-01)**
+
+**Released on:** Tree Mastering
+
+**Track title:** 01 - Sharpest Mind
+
+## Samplerview Vol. 3 - 2019
+
+![image-center](/assets/images/Samplesviewvol3.jpg){: .align-center}
+
+**[Spotify](https://open.spotify.com/album/1LTPAF2WPIczS9b8oHhRqK?si=qO_TyTnETo6Kp701xluQ_w)**
+| **[Apple Music](https://open.spotify.com/album/1LTPAF2WPIczS9b8oHhRqK?si=qO_TyTnETo6Kp701xluQ_w)**
+
+**Released on:** Playperview
+
+**Track title:** 13 - Cool Like Us
+
+## Chris Psicoff - Psicoff Remix
+
+![image-center](/assets/images/PsicoffRemix.jpg){: .align-center}
+
+**[Spotify](https://open.spotify.com/album/0RfkPg5nazzpRgNvbLPPU7?si=PCSvQggqQIqEh6T7lJN91w)**
+| **[Apple Music](https://open.spotify.com/album/1LTPAF2WPIczS9b8oHhRqK?si=qO_TyTnETo6Kp701xluQ_w)**
+
+**Track title:** 1 - Whisper (Icaro Ferre Remix)
