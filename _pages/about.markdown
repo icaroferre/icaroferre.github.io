@@ -2,8 +2,13 @@
 layout: single
 title: About
 permalink: /about/
----
+header:
+    overlay_color: "#000"
+    overlay_filter: "0.5"
+    overlay_image: /assets/images/LiveModular_2.jpg
+    # excerpt: ""
 
+---
 
 Ícaro Ferre is an electronic artist, music hacker and maker from São Paulo, Brazil.
 

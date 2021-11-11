@@ -6,35 +6,41 @@ layout: splash
 header:
 #   
   overlay_color: "#000"
-  overlay_filter: "0.5"
-  overlay_image: /assets/images/unsplash-image-1.jpg
+  overlay_filter: "0.8"
+  overlay_image: /assets/images/LiveModular_3.jpg
 #   actions:
 #     - label: "Download"
 #       url: "https://github.com/mmistakes/minimal-mistakes/"
 #   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-title: "Welcome!"
-excerpt: "Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs kielbasa biltong t-bone drumstick tri-tip tail sirloin pork chop."
-intro: 
-  - excerpt: 'Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tincidunt, *proin faucibus* voluptate felis id sollicitudin. Centered with `type="center"`'
+title: " "
+excerpt: " "
+# intro: 
+#   - excerpt: 'Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tincidunt, *proin faucibus* voluptate felis id sollicitudin. Centered with `type="center"`'
 feature_row:
+  - image_path: /assets/images/LiveModular_1.jpg
+    image_caption: "Live Modular"
+    title: "About Ícaro Ferre"
+    btn_label: "Read Mode"
+    btn_class: "btn--primary"
+    url: /about
+    # excerpt: "This is some sample content that goes here with **Markdown** formatting."
   - image_path: assets/images/FractionsFragments.jpg
+    image_caption: "Fractions & Fragments (2020)"
     alt: "Fractions & Fragments (2020)"
     title: "Music Releases"
     btn_label: "Check Out"
     btn_class: "btn--primary"
     url: /music
     # excerpt: "This is some sample content that goes here with **Markdown** formatting."
-  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
-    alt: "placeholder image 2"
-    title: "Placeholder 2"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "#test-link"
+  - image_path: /assets/images/ACDGEN+HW+3.jpg
+    image_caption: "ACDGEN – Hardware Edition"
+    alt: "ACDGEN – Hardware Edition"
+    title: "Projects"
+    # excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    url: /projects
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
-    title: "Placeholder 3"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+  
 ---
 
 {% include feature_row id="intro" type="center" %}

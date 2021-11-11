@@ -35,15 +35,16 @@ minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon
 
 footer:
   links:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/icaroferre"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/icaroferre"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/icaroferre"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/icaroferre"
+    
 
 plugins:
   - jekyll-feed
