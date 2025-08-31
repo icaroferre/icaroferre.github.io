@@ -1,0 +1,23 @@
+---
+export interface Props {
+	width?: string;
+	height?: string;
+	stripeWidth?: string;
+	className?: string;
+}
+
+const {
+	width = "20px",
+	height = "500px",
+	stripeWidth = "4px",
+	className = "",
+} = Astro.props;
+
+const backgroundStyle = `repeating-linear-gradient(45deg, white 1px, white ${stripeWidth}, transparent ${stripeWidth}, transparent calc(${stripeWidth} * 3))`;
+---
+
+<div
+	class={`h-full flex-shrink-0 self-stretch hidden md:block ${className} opacity-10`}
+	style={`width: ${width}; min-width: ${width}; height: ${height}; background: ${backgroundStyle};`}
+>
+</div>

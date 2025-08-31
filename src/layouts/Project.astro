@@ -1,0 +1,96 @@
+---
+import BaseLayout from "../layouts/Base.astro";
+import DetailCard from "../components/DetailCard.astro";
+import PageHeader from "../components/PageHeader.astro";
+import PageMediaCard from "../components/PageMediaCard.astro";
+import Separator from "../components/Separator.astro";
+import "../styles/globals.css";
+import { LightGallery } from "astro-lightgallery";
+import { YouTube } from "@astro-community/astro-embed-youtube";
+const { frontmatter, url, headings } = Astro.props as MarkdownLayoutProps<{
+	title: string;
+	project_url: string;
+	front_image: string;
+	date: string;
+	images?: string[];
+	canonical?: string;
+	youtube?: string[];
+}>;
+// Normalize images: if `images` is provided, use it; otherwise, fallback to `front_image`
+const galleryImages =
+	frontmatter.images && frontmatter.images.length > 0
+		? frontmatter.images
+		: [frontmatter.front_image];
+---
+
+<BaseLayout title="Project">
+	<div class="flex flex-col space-y-4">
+		<PageHeader
+			title={frontmatter.title}
+			front_image={frontmatter.front_image}
+		/>
+
+		<div
+			class="flex flex-col md:flex-row p-4 gap-4 justify-evenly items-start"
+		>
+			<div class="flex flex-col justify-evenly align-evenly w-200 py-4 gap-4">
+				<h1>INFO</h1>
+				<DetailCard title="URL">
+					<a href={frontmatter.project_url}
+						>{frontmatter.project_url}</a
+					>
+				</DetailCard>
+				{
+					frontmatter.date && (
+						<DetailCard title="DATE">{frontmatter.date}</DetailCard>
+					)
+				}
+			</div>
+			<Separator />
+			{
+				frontmatter.youtube && (
+					<div class="">
+						<PageMediaCard title="YOUTUBE">
+							<div class="flex flex-col w-90 gap-4 p-4">
+								{frontmatter.youtube &&
+									frontmatter.youtube.map((video_id) => (
+										<div class="w-80">
+											<YouTube id={video_id} />
+										</div>
+									))}
+							</div>
+						</PageMediaCard>
+					</div>
+				)
+			}
+
+			<Separator />
+			{
+				frontmatter.images && (
+					<PageMediaCard title="PHOTOS">
+						<LightGallery
+							layout={{
+								imgs: galleryImages.map((img) => ({
+									src: img,
+								})),
+							}}
+							options={{
+								download: false,
+								thumbnail: true, // Thumbnail-specific settings
+								// thumbHeight: "20px",
+								thumbWidth: "40px",
+								thumbMargin: 5,
+								selector: "a", // ensures images open correctly
+							}},
+					addPlugins={[ 'thumbnails' ]}
+						/>
+					</PageMediaCard>
+				)
+			}
+		</div>
+
+		<div class="p-10 text-sm font-thin">
+			<slot />
+		</div>
+	</div>
+</BaseLayout>

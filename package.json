@@ -9,6 +9,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.13.4"
+    "@astro-community/astro-embed-youtube": "^0.5.6",
+    "@tailwindcss/vite": "^4.1.12",
+    "astro": "^5.13.4",
+    "astro-lightgallery": "^2.0.1",
+    "tailwindcss": "^4.1.12"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "prettier-plugin-astro": "^0.14.1"
   }
 }

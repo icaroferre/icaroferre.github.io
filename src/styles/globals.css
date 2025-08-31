@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-black/90 text-white/80;
+  font-family: var(--font-body);
+}
+
+.element {
+  scrollbar-color: dark; /* Use darker scrollbars */
+}
+
+/* Dark background with gray handle */
+.custom-scrollbar {
+  scrollbar-color: #888 #333; /* thumb (gray) track (dark) */
+}
+
+/* For the entire page */
+html {
+  scrollbar-color: #888 #1a1a1a;
+  scrollbar-width: thin;
+  scrollbar-gutter: 50px;
+}
+
+h1 {
+  @apply text-lg font-bold md:w-1/2 py-1 px-2 text-white bg-emerald-600/60 border-r-2 border-b-2 border-black/20 drop-shadow-md;
+}
+h2 {
+  @apply text-lg font-bold py-2;
+}

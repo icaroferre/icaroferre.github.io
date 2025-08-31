@@ -1,0 +1,36 @@
+---
+import "../styles/globals.css";
+import Navigation from "../components/Navigation.astro";
+import Content from "../components/Content.astro";
+import { Font } from "astro:assets";
+interface Props {
+	children: any;
+}
+const { title, children } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+		/>
+		<title>{title}</title>
+		<Font cssVariable="--font-header" preload />
+		<Font cssVariable="--font-body" preload />
+	</head>
+	<body>
+		<Navigation />
+		<Content><slot /></Content>
+	</body>
+</html>

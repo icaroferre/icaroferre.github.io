@@ -1,16 +1,27 @@
 ---
+// src/pages/projects.astro
+import BaseLayout from "../layouts/Base.astro";
+import { getCollection } from "astro:content";
 
+const projects = await getCollection("projects");
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Projects">
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+		{
+			projects.map(({ data, slug }) => (
+				<a
+					href={`/projects/${slug}/`}
+					class="block border rounded-xl p-4"
+				>
+					<h2 class="text-xl font-bold">{data.title}</h2>
+					<img
+						src={data.front_image}
+						alt={data.title}
+						class="mt-2 rounded-lg"
+					/>
+				</a>
+			))
+		}
+	</div>
+</BaseLayout>
