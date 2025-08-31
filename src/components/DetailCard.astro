@@ -4,7 +4,7 @@ const { title } = Astro.props;
 ---
 
 <div
-	class="flex flex-col md:justify-left px-4 py-2 m-2 bg-white/2 drop-shadow-lg"
+	class="flex flex-col md:justify-left px-4 py-2 m-2 bg-white/2 text-wrap"
 >
 	<div
 		class="flex flex-row opacity-50 text-sm font-thin"
@@ -12,7 +12,7 @@ const { title } = Astro.props;
 	>
 		<b>{title}</b>
 	</div>
-	<div class="flex flex-row font-bold">
+	<div class="flex flex-row text-md font-bold text-balance p-1">
 		<slot />
 	</div>
 </div>

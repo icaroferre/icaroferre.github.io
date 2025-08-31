@@ -1,8 +1,36 @@
 @import "tailwindcss";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --link-color: theme("colors.white"); /* Tailwind color */
+  --link-hover-color: theme("colors.emerald.500"); /* Tailwind hover color */
+}
+
 body {
   @apply bg-black/90 text-white/80;
   font-family: var(--font-body);
+}
+
+/* Add space between paragraphs */
+p {
+  margin-top: 1rem; /* space above each paragraph */
+  margin-bottom: 1rem; /* space below each paragraph */
+  line-height: 1.6; /* optional: line spacing within paragraph */
+}
+
+@layer base {
+  a {
+    color: var(--link-color);
+    transition: color 0.2s;
+    font-weight: 700;
+  }
+
+  a:hover {
+    color: var(--link-hover-color);
+  }
 }
 
 .element {
@@ -22,8 +50,23 @@ html {
 }
 
 h1 {
-  @apply text-lg font-bold md:w-1/2 py-1 px-2 text-white bg-emerald-600/60 border-r-2 border-b-2 border-black/20 drop-shadow-md;
+  @apply text-lg font-bold w-auto py-1 px-2 text-white bg-emerald-600/60 border-r-2 border-b-2 border-black/20 drop-shadow-md;
 }
 h2 {
   @apply text-lg font-bold py-2;
+}
+.crop-2x1 {
+  width: 400px;
+  aspect-ratio: 2 / 1; /* Keeps height at half the width */
+  object-fit: cover; /* Crops the image while maintaining aspect ratio */
+  object-position: center; /* Centers the crop */
+  display: block; /* Ensures no extra inline spacing */
+}
+
+.artwork {
+  max-height: 400px; /* cap the height */
+  max-width: 100%; /* don’t overflow its container */
+  height: auto; /* keep proportions */
+  width: auto; /* avoid stretching when height is constrained */
+  display: block; /* optional: removes inline gap */
 }

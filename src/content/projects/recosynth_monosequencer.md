@@ -1,11 +1,6 @@
 ---
 title: "RecoSynth Mono Sequencer"
-layout: single
 excerpt: "Firmware Development for RecoSynth synthesizers"
-header:
-#   image: https://static.wixstatic.com/media/b92cd0_fcc4f92b0214403b8b297532525e38e7~mv2.jpg/v1/fill/w_676,h_652,al_c,q_85,usm_0.66_1.00_0.01/b92cd0_fcc4f92b0214403b8b297532525e38e7~mv2.jpg
-  overlay_color: "#000"
-  overlay_filter: "0.5"
 front_image: https://static.wixstatic.com/media/b92cd0_9320189639a94249933f9450d7bd611c~mv2.png/v1/fill/w_418,h_314,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/IMG_9030_heic.png
 project_url: "https://www.recosynth.com/mutucapro"
 youtube:

@@ -13,6 +13,7 @@
     "@tailwindcss/vite": "^4.1.12",
     "astro": "^5.13.4",
     "astro-lightgallery": "^2.0.1",
+    "open-graph-scraper": "^6.10.0",
     "tailwindcss": "^4.1.12"
   },
   "devDependencies": {

@@ -1,0 +1,31 @@
+---
+// src/pages/projects.astro
+import BaseLayout from "../layouts/Base.astro";
+import { getCollection } from "astro:content";
+
+import LinkCard from "../components/LinkCard.astro";
+const projects = await getCollection("projects");
+---
+
+<BaseLayout title="Projects">
+	<div class="p-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+		{
+			projects.map(({ data, slug }) => (
+
+				<LinkCard title={data.title} url={`/projects/${slug}/`} image={data.front_image} description={data.excerpt}/>
+				<!-- <a -->
+				<!-- 	href={`/projects/${slug}/`} -->
+				<!-- 	class="block bg-black/50 hover:bg-white/10 rounded-lg p-4 space-y-2" -->
+				<!-- > -->
+				<!-- 	<div class="text-md font-thin">{data.title}</div> -->
+				<!-- 	<div class="text-xs opacity-50">{data.excerpt}</div> -->
+				<!-- 	<img -->
+				<!-- 		src={data.front_image} -->
+				<!-- 		alt={data.title} -->
+				<!-- 		class="mt-4 rounded-lg crop-2x1" -->
+				<!-- 	/> -->
+				<!-- </a> -->
+			))
+		}
+	</div>
+</BaseLayout>

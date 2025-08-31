@@ -1,0 +1,83 @@
+---
+import "../styles/globals.css";
+import { YouTube } from "@astro-community/astro-embed-youtube";
+import ogs from "open-graph-scraper";
+
+const { title, url, image, description, fetch} = Astro.props as {
+	title: string;
+	url: string;
+	image: string;
+	description: string;
+	fetch: bool;
+};
+
+// Detect if it's a YouTube URL and extract video id
+function getYouTubeId(link: string): string | null {
+	try {
+		const u = new URL(link);
+		if (u.hostname.includes("youtube.com")) {
+			return u.searchParams.get("v");
+		}
+		if (u.hostname.includes("youtu.be")) {
+			return u.pathname.slice(1);
+		}
+		return null;
+	} catch {
+		return null;
+	}
+}
+
+const videoId = getYouTubeId(url);
+
+// Fetch metadata for non-YouTube URLs
+let ogImage: string | null = null;
+let ogTitle: string = title;
+let ogDescription: string = description;
+
+if (!videoId && fetch) {
+  try {
+    const { result } = await ogs({ url });
+    ogImage = result.ogImage[0].url || null;
+    ogTitle = result.ogTitle || title;
+	ogDescription = result.ogDescription;
+  } catch (e) {
+    console.warn(`Could not fetch OG data for ${url}`, e);
+  }
+}
+---
+
+<div
+	class="bg-black/20 rounded-lg hover:border-1 hover:border-white/20 p-4"
+>
+
+	{
+		videoId ? (
+				<div class="flex flex-col gap-1">
+					<YouTube id={videoId} />
+					<div class="mt-2 text-lg font-medium">{title}</div>
+					<div class="text-xs font-mono break-all">{url}</div>
+				</div>
+
+		) : (
+			<a
+				href={url}
+				target="_blank"
+				rel="noopener noreferrer"
+				class="w-full"
+			>
+				<div class="flex flex-col gap-1">
+					{(image || ogImage) && (
+						<img
+							src={ image ? image : ogImage}
+							alt={ogTitle}
+							class="rounded-xl w-full crop-2x1 object-cover"
+						/>
+					)}
+					<div class="text-lg font-medium">{title}</div>
+					<div class="text-xs font-mono break-all">{url}</div>
+					<div class="text-sm font-thin opacity-70 break-all">{ogDescription}</div>
+				</div>
+			</a>
+		)
+	}
+</div>

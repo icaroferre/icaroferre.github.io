@@ -1,0 +1,46 @@
+---
+// src/pages/projects.astro
+import BaseLayout from "../layouts/Base.astro";
+import { getCollection } from "astro:content";
+
+const music = await getCollection("music");
+---
+
+<BaseLayout title="Music">
+	<div class="grid grid-cols-1 gap-8">
+		{
+			music.map(({ data }) => (
+				<div class="bg-white/10 m-4 rounded-lg p-5">
+					<div class="text-[30px] font-thin">{data.title}</div>
+					<div class="text-sm opacity-80">
+						{data.year} - {data.label}
+					</div>
+					<div class="flex flex-col md:flex-row justify-start">
+						<img
+							src={data.artwork}
+							alt={data.title}
+							class="p-4 rounded-xl artwork"
+						/>
+						<div class="flex flex-col gap-2 p-4">
+							<div class="opacity-50">TRACKLIST </div>
+							<div class="flex flex-col gap-2">
+								{data.tracklist?.map((track, index) => (
+									<div key={index} class="">
+										{index + 1} - {track}
+									</div>
+								))}
+							</div>
+							<div class="opacity-50">LISTEN AT</div>
+							<div class="flex flex-col gap-2">
+								{ data.bandcamp && (<a href={data.bandcamp}>Bandcamp</a>)}
+								{ data.applemusic && (<a href={data.applemusic}>Apple Music</a>)}
+								{ data.bandcamp && (<a href={data.bandcamp}>Spotify</a>)}
+								{ data.youtube && (<a href={data.youtube}>Youtube</a>)}
+							</div>
+						</div>
+					</div>
+				</div>
+			))
+		}
+	</div>
+</BaseLayout>

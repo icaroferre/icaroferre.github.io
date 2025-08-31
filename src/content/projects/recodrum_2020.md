@@ -1,28 +1,14 @@
 ---
 title: "New Recodrum by RecoSynth"
-layout: single
 excerpt: "Firmware Development + Circuit Design for the new Recodrum Sequencer"
-header:
-#   image: https://static.wixstatic.com/media/b92cd0_fcc4f92b0214403b8b297532525e38e7~mv2.jpg/v1/fill/w_676,h_652,al_c,q_85,usm_0.66_1.00_0.01/b92cd0_fcc4f92b0214403b8b297532525e38e7~mv2.jpg
-  overlay_color: "#000"
-  overlay_filter: "0.5"
-  overlay_image: https://static.wixstatic.com/media/b92cd0_fcc4f92b0214403b8b297532525e38e7~mv2.jpg/v1/fill/w_676,h_652,al_c,q_85,usm_0.66_1.00_0.01/b92cd0_fcc4f92b0214403b8b297532525e38e7~mv2.jpg
-  teaser: https://static.wixstatic.com/media/b92cd0_fcc4f92b0214403b8b297532525e38e7~mv2.jpg/v1/fill/w_676,h_652,al_c,q_85,usm_0.66_1.00_0.01/b92cd0_fcc4f92b0214403b8b297532525e38e7~mv2.jpg
-  actions:
-    - label: "Check Website"
-      url: "https://www.recosynth.com/product-page/new-recodrum"
+front_image: https://static.wixstatic.com/media/b92cd0_fcc4f92b0214403b8b297532525e38e7~mv2.jpg/v1/fill/w_676,h_652,al_c,q_85,usm_0.66_1.00_0.01/b92cd0_fcc4f92b0214403b8b297532525e38e7~mv2.jpg
+images:
+    - https://static.wixstatic.com/media/b92cd0_fcc4f92b0214403b8b297532525e38e7~mv2.jpg/v1/fill/w_676,h_652,al_c,q_85,usm_0.66_1.00_0.01/b92cd0_fcc4f92b0214403b8b297532525e38e7~mv2.jpg
+project_url: "https://www.recosynth.com/product-page/new-recodrum"
+youtube:
+    - "lSIXakxuSg0"
 ---
 
-![image-center](https://static.wixstatic.com/media/b92cd0_fcc4f92b0214403b8b297532525e38e7~mv2.jpg/v1/fill/w_676,h_652,al_c,q_85,usm_0.66_1.00_0.01/b92cd0_fcc4f92b0214403b8b297532525e38e7~mv2.jpg){: .align-center}
-
-## Info
-
-**Project URL:** [https://www.recosynth.com/newrecodrum](https://www.recosynth.com/newrecodrum)
-
-
-## Video
-
-{% include video id="lSIXakxuSg0" provider="youtube" %}
 
 ## Description
 

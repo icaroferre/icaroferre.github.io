@@ -31,9 +31,9 @@ const galleryImages =
 		/>
 
 		<div
-			class="flex flex-col md:flex-row p-4 gap-4 justify-evenly items-start"
+			class="flex flex-col md:flex-row p-4 gap-4 items-start"
 		>
-			<div class="flex flex-col justify-evenly align-evenly w-200 py-4 gap-4">
+			<div class="flex flex-col justify-evenly align-evenly max-w-md py-4 gap-4">
 				<h1>INFO</h1>
 				<DetailCard title="URL">
 					<a href={frontmatter.project_url}
@@ -46,9 +46,9 @@ const galleryImages =
 					)
 				}
 			</div>
-			<Separator />
 			{
 				frontmatter.youtube && (
+			<Separator />
 					<div class="">
 						<PageMediaCard title="YOUTUBE">
 							<div class="flex flex-col w-90 gap-4 p-4">
@@ -64,9 +64,9 @@ const galleryImages =
 				)
 			}
 
-			<Separator />
 			{
 				frontmatter.images && (
+			<Separator />
 					<PageMediaCard title="PHOTOS">
 						<LightGallery
 							layout={{

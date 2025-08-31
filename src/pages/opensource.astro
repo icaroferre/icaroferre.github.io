@@ -1,0 +1,36 @@
+---
+import BaseLayout from "../layouts/Base.astro";
+import LinkCard from "../components/LinkCard.astro";
+---
+
+<BaseLayout title="Open Source">
+	<div class="grid grid-cols-1 md:grid-cols-4 gap-8 m-4 p-4">
+		<LinkCard
+			title="Audiohit"
+			url="https://github.com/icaroferre/AudioHit"
+			description="Rust-based CLI for batch processing audio samples"
+		/>
+		<LinkCard
+			title="ot_utils"
+			url="https://github.com/icaroferre/ot_utils"
+			description="Rust library for grouping audio samples and generating .ot files for the Elektron Octatrack"
+		/>
+		<LinkCard
+			title="Versos"
+			url="https://github.com/icaroferre/Versos"
+			image="https://github.com/icaroferre/Versos/raw/master/Images/Versos-Screenshot.jpg"
+			description="Max/MSP Multi-Track Looper"
+		/>
+		<LinkCard
+			title="MGC"
+			url="https://github.com/icaroferre/MGC"
+			image="https://github.com/icaroferre/MGC/raw/master/screenshot.jpg?raw=true"
+			description="Multi-Channel Grid Control for Monome"
+		/>
+		<LinkCard
+			title="Pico8-Cartloader"
+			url="https://github.com/icaroferre/Pico8-Cartloader"
+			description="Batch downloader and Scraper for Pico-8 carts"
+		/>
+	</div>
+</BaseLayout>

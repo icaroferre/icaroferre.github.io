@@ -1,27 +1,17 @@
 ---
 title: "Sonic Mayhem – Doomsday Producers Edition"
-layout: single
 excerpt: "Max for Live & Kontakt library development"
-header:
-#   image: https://static.wixstatic.com/media/b92cd0_fcc4f92b0214403b8b297532525e38e7~mv2.jpg/v1/fill/w_676,h_652,al_c,q_85,usm_0.66_1.00_0.01/b92cd0_fcc4f92b0214403b8b297532525e38e7~mv2.jpg
-  overlay_color: "#000"
-  overlay_filter: "0.5"
-  overlay_image: /assets/images/DoomsdayPE.jpg
-  teaser: /assets/images/DoomsdayPE.jpg
-  actions:
-    - label: "Check Website"
-      url: "https://doomsday.sonicmayhem.com/store/album/doomsday-producers-edition-digi/"
+images:
+    - https://images.squarespace-cdn.com/content/v1/5ae4ad09f407b4362a86d32f/1536007380366-AFO3WWF63I6921NIT5VY/11264446_1137464312937323_2071740932670784149_n.png?format=1000w
+    - https://images.squarespace-cdn.com/content/v1/5ae4ad09f407b4362a86d32f/1525035666461-LO4N471C68YG6SSIQBS7/AlphaDTR.png?format=500w
+    - https://images.squarespace-cdn.com/content/v1/5ae4ad09f407b4362a86d32f/1525035677894-PSCSO9EL7HHZDZZOPJDZ/OmegaSEQ.png?format=500w
+front_image: /images/DoomsdayPE.jpg
+project_url: "https://doomsday.sonicmayhem.com/store/album/doomsday-producers-edition-digi/"
+youtube: 
+    - "7NidTe038KY"
 ---
 
-![image-center](/assets/images/DoomsdayPE.jpg){: .align-center}
 
-## Info
-
-**Project URL:** [http://spektroaudio.com/blog/2015/7/15/sonic-mayhem-doomsday-producers-edition](http://spektroaudio.com/blog/2015/7/15/sonic-mayhem-doomsday-producers-edition)
-
-## Video
-
-{% include video id="7NidTe038KY" provider="youtube" %}
 
 ## Description
 
