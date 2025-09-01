@@ -1,6 +1,7 @@
 ---
 layout: ../layouts/Page.astro
 title: About
+front_image: /images/LiveModular_2.jpg
 ---
 
 Ícaro Ferre is an electronic artist, music hacker and maker from São Paulo, Brazil.

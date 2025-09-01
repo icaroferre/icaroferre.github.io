@@ -13,7 +13,6 @@ youtube:
 
 
 
-## Description
 
 For his Doomsday EP, me and Sonic Mayhem worked on two Max for Live devices and a Kontakt library that feature some of his sigurature sounds. These tools are now available to other artists and producers via the Doomsday Producers Edition, available on his online shop.
 

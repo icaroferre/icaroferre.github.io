@@ -3,11 +3,18 @@
 import BaseLayout from "../layouts/Base.astro";
 const { frontmatter, url, headings } = Astro.props as MarkdownLayoutProps<{
 	title: string;
+	front_image: string;
 }>;
 ---
 
 <BaseLayout title={frontmatter.title}>
-	<div class="m-4 p-4">
-		<slot />
+	<div class="m-4 bg-black/30 rounded-lg shadow-lg">
+		<img
+			class="hero-image rounded-t-lg border-b border-white/10"
+			src={frontmatter.front_image}
+		/>
+		<div class="p-4">
+			{(<slot />)}
+		</div>
 	</div>
 </BaseLayout>

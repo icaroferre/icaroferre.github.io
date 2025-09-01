@@ -1,5 +1,5 @@
 ---
-title: "Spektro Audio ACDLAB"
+title: "ACDLAB"
 excerpt: "Homebrew game for the Gameboy based on ACDGEN"
 front_image: /images/ACDLAB.jpg
 images:
@@ -10,7 +10,6 @@ youtube:
 ---
 
 
-## Description
 
 ACDLAB is a homebrew music groovebox rom for the Nintendo Gameboy. 
 It features a synth voice sequenced by a trimmed down version of ACDGEN and a four part drum synthesizer.

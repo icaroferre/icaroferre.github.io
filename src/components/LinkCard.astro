@@ -3,7 +3,7 @@ import "../styles/globals.css";
 import { YouTube } from "@astro-community/astro-embed-youtube";
 import ogs from "open-graph-scraper";
 
-const { title, url, image, description, fetch} = Astro.props as {
+const { title, url, image, description, fetch } = Astro.props as {
 	title: string;
 	url: string;
 	image: string;
@@ -35,47 +35,55 @@ let ogTitle: string = title;
 let ogDescription: string = description;
 
 if (!videoId && fetch) {
-  try {
-    const { result } = await ogs({ url });
-    ogImage = result.ogImage[0].url || null;
-    ogTitle = result.ogTitle || title;
-	ogDescription = result.ogDescription;
-  } catch (e) {
-    console.warn(`Could not fetch OG data for ${url}`, e);
-  }
+	try {
+		const { result } = await ogs({ url });
+		ogImage = result.ogImage[0].url || null;
+		ogTitle = result.ogTitle || title;
+		ogDescription = result.ogDescription;
+	} catch (e) {
+		console.warn(`Could not fetch OG data for ${url}`, e);
+	}
 }
 ---
 
 <div
-	class="bg-black/20 rounded-lg hover:border-1 hover:border-white/20 p-4"
+	class="bg-black/30 rounded-lg shadow-lg hover:outline-1 hover:outline-white/20"
 >
-
 	{
 		videoId ? (
-				<div class="flex flex-col gap-1">
-					<YouTube id={videoId} />
+			<div class="flex flex-col gap-1">
+				<YouTube
+					id={videoId}
+					class="max-w-200 rounded-t-lg border-b border-white/20"
+				/>
+				<div class="px-4 py-2 flex flex-col gap-1">
 					<div class="mt-2 text-lg font-medium">{title}</div>
-					<div class="text-xs font-mono break-all">{url}</div>
+					<div class="text-xs font-mono text-(--link-hover-color) break-all">
+						{url}
+					</div>
 				</div>
-
+			</div>
 		) : (
-			<a
-				href={url}
-				target="_blank"
-				rel="noopener noreferrer"
-				class="w-full"
-			>
+			<a href={url} rel="noopener noreferrer" class="w-full">
 				<div class="flex flex-col gap-1">
 					{(image || ogImage) && (
 						<img
-							src={ image ? image : ogImage}
+							src={image ? image : ogImage}
 							alt={ogTitle}
-							class="rounded-xl w-full crop-2x1 object-cover"
+							class="rounded-t-lg w-full crop-2x1 object-cover border-b border-white/10"
 						/>
 					)}
-					<div class="text-lg font-medium">{title}</div>
-					<div class="text-xs font-mono break-all">{url}</div>
-					<div class="text-sm font-thin opacity-70 break-all">{ogDescription}</div>
+					<div class="py-2 px-4 flex flex-col gap-1">
+						<div class="text-lg font-medium">{title}</div>
+						<div class="text-xs font-mono text-(--link-hover-color) break-all">
+							{url}
+						</div>
+						{ogDescription && (
+							<p class="mb-2 text-sm font-thin opacity-70 text-balance wrap-break-word break-all">
+								{ogDescription}
+							</p>
+						)}
+					</div>
 				</div>
 			</a>
 		)

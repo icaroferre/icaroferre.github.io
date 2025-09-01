@@ -7,7 +7,6 @@ images:
 project_url: "http://spektroaudio.com/deckards-dream-editor"
 ---
 
-## Description
 
 This is a free Max for Live, AU MIDI FX and Standalone editor for the Black Corporation's Deckards Dream synthesizer that I've developed for Black Corporation.
 

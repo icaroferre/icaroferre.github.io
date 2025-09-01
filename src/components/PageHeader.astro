@@ -1,5 +1,6 @@
 ---
 import "../styles/globals.css";
+import "../styles/animation.scss";
 const { title, front_image } = Astro.props;
 ---
 
@@ -17,10 +18,12 @@ const { title, front_image } = Astro.props;
 	<!-- Title -->
 	<div class="absolute bottom-8 left-8 text-white z-10">
 		<div
-			class="text-3xl md:text-5xl font-bold"
+			class="text-3xl md:text-5xl glitch"
 			style="font-family: var(--font-header)"
+			data-text={title}
 		>
 			{title}
 		</div>
+		<!-- <div class="text-xl"><a href="/">www.google.com</a></div> -->
 	</div>
 </section>

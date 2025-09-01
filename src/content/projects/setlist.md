@@ -4,10 +4,15 @@ excerpt: "Software Development - Playback M4L Device for Ableton Live"
 front_image: /images/SetlistBG.jpg
 images:
     - /images/Setlist.png
+    - /images/setlist/01.jpg
+    - /images/setlist/02.jpg
+    - /images/setlist/03.jpg
+    - /images/setlist/04.jpg
+    - /images/setlist/05.jpg
+    - /images/setlist/06.jpg
 project_url: "https://www.strangeelectronic.com/setlist"
 ---
 
-## Description
 
 Setlist is a Max for Live device that I've been actively developing for Strange Electronic since 2015. It's an incredible tool for playback engineers looking for an easier way to manage and play live sets.
 

@@ -4,6 +4,14 @@ excerpt: "Multi-Track MIDI Sequencer with Algorithmic Generators"
 front_image: https://images.squarespace-cdn.com/content/v1/51c85d01e4b03c9d19356577/1674142023884-X274V2QPXP74V8N0PWWQ/NGEN+-+Promo+Image+1.png
 images: 
     - https://images.squarespace-cdn.com/content/v1/51c85d01e4b03c9d19356577/1674142023884-X274V2QPXP74V8N0PWWQ/NGEN+-+Promo+Image+1.pngg
+    - /images/ngen/02.jpg
+    - /images/ngen/03.jpg
+    - /images/ngen/04.jpg
+    - /images/ngen/05.jpg
+    - /images/ngen/06.jpg
+    - /images/ngen/07.jpg
+    - /images/ngen/08.jpg
+    - /images/ngen/09.jpg
 project_url: "https://spektroaudio.com/ngen"
 youtube:
     - "HjDxpgJuZ6k"
@@ -13,7 +21,6 @@ youtube:
 
 
 
-## Description
 
 NGEN is a unique 16-track MIDI sequencer design in São Paulo / Brazil that lets you combine multiple algorithmic / generative generators and MIDI FXs to sequence multiple hardware or software MIDI instruments.
 It offers a completely new way of creating and performing music by abstracting the composition process. Instead of writing sequences from scratch, NGEN lets you quickly generate a new sequence for your drums, basslines, melodies, and chord progressions with a push of a button.

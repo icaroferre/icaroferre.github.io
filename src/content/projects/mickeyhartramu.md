@@ -6,8 +6,4 @@ images:
     - /images/Ramu.jpg
 ---
 
-<!-- ![image-center](/assets/images/Ramu.jpg){: .align-center} -->
-
-## Description
-
 For this project, the Mickey Hart's RAMU tour team asked me to create custom Max for Live devices effects to recreate some of Mickey Hart's signature sounds, expand their sonic pallete, and facilitate patch management.

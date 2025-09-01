@@ -7,7 +7,6 @@ images:
 project_url: "https://www.korg.com/tmp/support/download/index.php/software/0/733/4572/?country=us&page=software&prodtype=0&prodid=733&fileid=4572"
 ---
 
-## Description
 
 A pack containing 100 presets for the Korg Monologue that I've created over the years is available on Korg's website.
 
