@@ -24,7 +24,7 @@ const galleryImages =
 ---
 
 <BaseLayout title="Project">
-	<div class="flex flex-col space-y-4">
+	<div class="flex flex-col justify-center space-y-4">
 		<PageHeader
 			title={frontmatter.title}
 			front_image={frontmatter.front_image}
@@ -38,7 +38,7 @@ const galleryImages =
 					<h1>INFO</h1>
 					{frontmatter.project_url && (
 					<DetailCard title="URL">
-						<a href={frontmatter.project_url}
+						<a class="break-all" href={frontmatter.project_url}
 							>{frontmatter.project_url}</a
 						>
 					</DetailCard>
