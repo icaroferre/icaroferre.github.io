@@ -2,53 +2,75 @@
 // src/pages/projects.astro
 import BaseLayout from "../layouts/Base.astro";
 import { getCollection } from "astro:content";
+import LinkCard from "../components/LinkCard.astro";
 
 const music = await getCollection("music");
 ---
 
 <BaseLayout title="Music">
-	<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-		{
-			music.map(({ data }) => (
-				<div class="bg-black/30 m-4 rounded-lg p-8 shadow-lg">
-					<div class="text-[30px] font-thin">{data.title}</div>
-					<div class="text-sm opacity-80">
-						{data.year} - {data.label}
-					</div>
-					<div class="flex flex-col md:flex-row justify-start">
-						<img
-							src={data.artwork}
-							alt={data.title}
-							class="mt-4 artwork rounded-lg"
-						/>
-						<div class="flex flex-col gap-2 p-4">
-							<div class="opacity-50">TRACKLIST </div>
-							<div class="flex flex-col gap-2">
-								{data.tracklist?.map((track, index) => (
-									<div key={index} class="">
-										{index + 1} - {track}
-									</div>
-								))}
-							</div>
-							<div class="opacity-50">LISTEN AT</div>
-							<div class="flex flex-col gap-2">
-								{data.bandcamp && (
-									<a href={data.bandcamp}>Bandcamp</a>
-								)}
-								{data.applemusic && (
-									<a href={data.applemusic}>Apple Music</a>
-								)}
-								{data.bandcamp && (
-									<a href={data.bandcamp}>Spotify</a>
-								)}
-								{data.youtube && (
-									<a href={data.youtube}>Youtube</a>
-								)}
+	<div class="grid grid-cols-1 justify-center gap-y-4">
+		<h1>DJ / LIVE SETS</h1>
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-4">
+			<LinkCard
+				title="Icaro Ferre no Fama Museu - Itu, SP"
+				url="https://www.youtube.com/watch?v=CIp-Q8Dd3oc"
+			/>
+			<LinkCard
+				title="BESOURO SESSIONS 06 - Special Guest: Icaro Ferre"
+				url="https://soundcloud.com/obesouro/besouro-sessions-06-ft-icaro"
+				image="https://i1.sndcdn.com/artworks-FLDXmbLSkjyzJ9xT-kSCvKA-t500x500.png"
+			/>
+			<LinkCard
+				title="Icaro Ferre (Live Modular) @ Podcast Connect"
+				url="https://soundcloud.com/connectch/icaro-ferre"
+				image="https://i1.sndcdn.com/artworks-000395616978-zphvvi-t500x500.jpg"
+			/>
+		</div>
+		<h1>MUSIC RELEASES</h1>
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+			{
+				music.map(({ data }) => (
+					<div class="bg-black/30 rounded-lg p-8 shadow-lg">
+						<div class="text-[30px] font-thin">{data.title}</div>
+						<div class="text-sm opacity-80">
+							{data.year} - {data.label}
+						</div>
+						<div class="flex flex-col md:flex-row justify-start">
+							<img
+								src={data.artwork}
+								alt={data.title}
+								class="mt-4 artwork rounded-lg"
+							/>
+							<div class="flex flex-col gap-2 p-4">
+								<div class="opacity-50">TRACKLIST </div>
+								<div class="flex flex-col gap-2">
+									{data.tracklist?.map((track, index) => (
+										<div key={index} class="">
+											{index + 1} - {track}
+										</div>
+									))}
+								</div>
+								<div class="opacity-50">LISTEN AT</div>
+								<div class="flex flex-col gap-2">
+									{data.bandcamp && (
+										<a href={data.bandcamp}>Bandcamp</a>
+									)}
+									{data.applemusic && (
+										<a href={data.applemusic}>Apple Music</a>
+									)}
+									{data.bandcamp && (
+										<a href={data.bandcamp}>Spotify</a>
+									)}
+									{data.youtube && (
+										<a href={data.youtube}>Youtube</a>
+									)}
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			))
-		}
+				))
+			}
+		</div>
 	</div>
+		
 </BaseLayout>

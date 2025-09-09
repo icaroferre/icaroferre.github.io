@@ -8,10 +8,24 @@ const projects = await getCollection("projects");
 ---
 
 <BaseLayout title="Projects">
+	<a href="https://spektroaudio.com/projects" class="font-black">
+		<div
+			class="bg-[url(/images/ngen/04.jpg)] m-4 h-40 bg-center bg-cover flex flex-col items-center justify-center rounded-lg outline-1 outline-white/20"
+		>
+			<div
+				class="backdrop-brightness-30 hover:backdrop-brightness-50 backdrop-contrast-90 backdrop-blur-sm p-4 rounded-lg w-full h-full flex flex-col items-center justify-center gap-2"
+			>
+				<div class="text-sm opacity-60" style="text-decodation:inherit">
+					More projects available at
+				</div>
+				<div class="text-lg">spektroaudio.com/projects</div>
+			</div>
+		</div>
+	</a>
 	<div class="p-4 grid grid-cols-1 md:grid-cols-3 gap-8">
 		{
 			projects
-				.sort((a, b) => a.data.title.localeCompare(b.data.title))
+				.sort((a, b) => b.data.year - a.data.year)
 				.map(({ data, slug }) => (
 					<LinkCard
 						title={data.title}

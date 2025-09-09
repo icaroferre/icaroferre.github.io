@@ -33,19 +33,22 @@ const galleryImages =
 		<div
 			class="flex flex-col md:flex-row p-4 gap-4 items-start"
 		>
-			<div class="flex flex-col justify-evenly align-evenly max-w-md py-4 gap-4">
-				<h1>INFO</h1>
-				<DetailCard title="URL">
-					<a href={frontmatter.project_url}
-						>{frontmatter.project_url}</a
-					>
-				</DetailCard>
-				{
-					frontmatter.date && (
-						<DetailCard title="DATE">{frontmatter.date}</DetailCard>
-					)
-				}
-			</div>
+
+				<div class="flex flex-col justify-evenly align-evenly max-w-md py-4 gap-4">
+					<h1>INFO</h1>
+					{frontmatter.project_url && (
+					<DetailCard title="URL">
+						<a href={frontmatter.project_url}
+							>{frontmatter.project_url}</a
+						>
+					</DetailCard>
+					)}
+					{
+						frontmatter.year && (
+							<DetailCard title="DATE">{frontmatter.year}</DetailCard>
+						)
+					}
+				</div>
 			{
 				frontmatter.youtube && (
 			<Separator />

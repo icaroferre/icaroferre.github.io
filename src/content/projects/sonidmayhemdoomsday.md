@@ -9,6 +9,7 @@ front_image: /images/DoomsdayPE.jpg
 project_url: "https://doomsday.sonicmayhem.com/store/album/doomsday-producers-edition-digi/"
 youtube: 
     - "7NidTe038KY"
+year: 2015
 ---
 
 

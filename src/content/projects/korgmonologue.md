@@ -5,6 +5,7 @@ front_image: https://cdn.korg.com/us/products/upload/b684ae90ce2b555b1b7f6913fd4
 images:
     - https://cdn.korg.com/us/products/upload/b684ae90ce2b555b1b7f6913fd4c17c6_pc.png
 project_url: "https://www.korg.com/tmp/support/download/index.php/software/0/733/4572/?country=us&page=software&prodtype=0&prodid=733&fileid=4572"
+year: 2020
 ---
 
 

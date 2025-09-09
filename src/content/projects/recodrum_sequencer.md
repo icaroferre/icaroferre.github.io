@@ -12,10 +12,11 @@ youtube:
     - "lSIXakxuSg0"
     - "Rjdmrjh2OtQ"
     - "oeRdvLo3spg"
+year: 2022
 ---
 
 
-I was asked by [Arthur Joly](http://instagram.com/arthurjoly) / [RecoSynth](http://recosynth.com) to develop the circuit and firmware for the MIDI and trigger sequencer included in the New Recodrum.
+[Arthur Joly](http://instagram.com/arthurjoly) / [RecoSynth](http://recosynth.com) asked me to develop the circuit and firmware for the MIDI and trigger sequencer included in the New Recodrum line of drum machines.
 
 
 The sequencer uses a custom PCB and an Arduino Mega and it includes features such as:

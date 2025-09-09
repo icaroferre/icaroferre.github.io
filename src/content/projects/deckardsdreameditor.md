@@ -5,6 +5,7 @@ front_image: /images/DD+Editor+-+MaxforLive.jpg
 images: 
     - /images/DD+Editor+-+MaxforLive.jpg
 project_url: "http://spektroaudio.com/deckards-dream-editor"
+year: 2018
 ---
 
 

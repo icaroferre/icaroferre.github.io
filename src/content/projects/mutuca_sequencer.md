@@ -12,6 +12,7 @@ images:
     - https://static.wixstatic.com/media/b92cd0_18b04b8318064df7b9ab2df9e997e68f~mv2.jpg/v1/fill/w_720,h_480,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/mutuca_01.jpg
     - https://static.wixstatic.com/media/b92cd0_c151709cfa1943db8a9ce0e724ac9f55~mv2.jpg/v1/fill/w_720,h_480,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/mutuca_04.jpg
     - https://static.wixstatic.com/media/b92cd0_af74bf2103b34a31af003b068595166e~mv2.jpg/v1/fill/w_1200,h_800,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_1633_JPG.jpg
+year: 2022
 ---
 
 

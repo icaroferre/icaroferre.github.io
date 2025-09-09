@@ -1,9 +1,10 @@
 ---
 title: "Strange Electronic Setlist"
 excerpt: "Software Development - Playback M4L Device for Ableton Live"
-front_image: /images/SetlistBG.jpg
+front_image: /images/setlist/03.jpg
 images:
     - /images/Setlist.png
+    - /images/SetlistBG.jpg
     - /images/setlist/01.jpg
     - /images/setlist/02.jpg
     - /images/setlist/03.jpg
@@ -11,6 +12,7 @@ images:
     - /images/setlist/05.jpg
     - /images/setlist/06.jpg
 project_url: "https://www.strangeelectronic.com/setlist"
+year: 2015
 ---
 
 

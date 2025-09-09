@@ -87,7 +87,7 @@ html {
 }
 
 h1 {
-  @apply text-lg font-bold w-auto py-1 px-2 text-white bg-emerald-500/60 border-r-2 border-b-2 border-black/20 drop-shadow-md;
+  @apply text-lg font-mono font-bold w-auto py-1 px-4 text-white bg-emerald-500/60 border-r-2 border-b-2 border-black/20 drop-shadow-md;
 }
 h2 {
   @apply text-lg font-bold py-2;
@@ -106,7 +106,7 @@ li::before {
 
 .crop-2x1 {
   width: 600px;
-  aspect-ratio: 2 / 1; /* Keeps height at half the width */
+  aspect-ratio: 16 / 9; /* Keeps height at half the width */
   object-fit: cover; /* Crops the image while maintaining aspect ratio */
   object-position: center; /* Centers the crop */
   display: block; /* Ensures no extra inline spacing */

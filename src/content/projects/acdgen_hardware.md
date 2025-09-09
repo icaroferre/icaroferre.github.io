@@ -1,6 +1,6 @@
 ---
 title: "ACDGEN – Hardware Edition"
-excerpt: "Hardware MIDI sequencer based on algorithmic sequence generation."
+excerpt: "Hardware MIDI sequencer based on algorithmic sequence generation"
 front_image: https://images.squarespace-cdn.com/content/v1/51c85d01e4b03c9d19356577/1551298789139-OS0KL0JKRLUEOIA4K5Y3/ACDGEN+Promo.jpg
 teaser: https://images.squarespace-cdn.com/content/v1/51c85d01e4b03c9d19356577/1551298789139-OS0KL0JKRLUEOIA4K5Y3/ACDGEN+Promo.jpg?format=750w
 project_url: "http://spektroaudio.com/acdgen-hardware-edition"
@@ -11,6 +11,7 @@ images:
     - /images/acdgen_hw_04.jpg
 youtube:
     - "JEU8XNG6-uc"
+year: 2019
 
 ---
 

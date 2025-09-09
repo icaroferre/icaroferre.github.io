@@ -7,6 +7,7 @@ images:
 project_url: "https://spektroaudio.com/acdlab"
 youtube:
     - "JEU8XNG6-uc"
+year: 2021
 ---
 
 
