@@ -56,10 +56,12 @@ const music = await getCollection("music");
 										<a href={data.bandcamp}>Bandcamp</a>
 									)}
 									{data.applemusic && (
-										<a href={data.applemusic}>Apple Music</a>
+										<a href={data.applemusic}>
+											Apple Music
+										</a>
 									)}
 									{data.bandcamp && (
-										<a href={data.bandcamp}>Spotify</a>
+										<a href={data.spotify}>Spotify</a>
 									)}
 									{data.youtube && (
 										<a href={data.youtube}>Youtube</a>
@@ -72,5 +74,4 @@ const music = await getCollection("music");
 			}
 		</div>
 	</div>
-		
 </BaseLayout>
