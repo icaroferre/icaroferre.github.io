@@ -7,7 +7,16 @@ import LinkCard from "../components/LinkCard.astro";
 const music = await getCollection("music");
 ---
 
-<BaseLayout title="Music">
+<BaseLayout
+	title="Music"
+	seo={{
+		title: "Music - Icaro Ferre",
+		description:
+			"Latest music releases by Icaro Ferre, an electronic artist and maker from São Paulo, Brazil",
+		image: "https://icaroferre.com/images/FractionsFragments.jpg",
+		url: "https://icaroferre.com/projects",
+	}}
+>
 	<div class="grid grid-cols-1 justify-center gap-y-4">
 		<h1>DJ / LIVE SETS</h1>
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-4">

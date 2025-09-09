@@ -1,9 +1,16 @@
 ---
 import BaseLayout from "../layouts/Base.astro";
 import LinkCard from "../components/LinkCard.astro";
+import Seo from "../components/Seo.astro";
 ---
 
-<BaseLayout title="Media">
+<BaseLayout
+	title="Media"
+	seo={{
+		title: "Media - Icaro Ferre",
+		url: "https://icaroferre.com/media",
+	}}
+>
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 		<LinkCard
 			title="Art Music Technology Podcast 110: Ícaro Ferre"

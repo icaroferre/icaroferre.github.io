@@ -23,7 +23,15 @@ const galleryImages =
 		: [frontmatter.front_image];
 ---
 
-<BaseLayout title="Project">
+<BaseLayout 
+	title="Project" 
+	seo={{
+		title: frontmatter.title + " - Icaro Ferre",
+		description: frontmatter.excerpt + ", by Icaro Ferre.",
+		image: frontmatter.front_image,
+		url: "https://icaroferre.com" + url
+	}}
+	>
 	<div class="flex flex-col justify-center space-y-4">
 		<PageHeader
 			title={frontmatter.title}

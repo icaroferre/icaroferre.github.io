@@ -1,0 +1,33 @@
+---
+import { SEO } from "astro-seo";
+
+const {
+	title = "Icaro Ferre",
+	description = "Electronic Artist and Maker from São Paulo, Brazil",
+	image = "/images/LiveModular_1.jpg",
+	url = "https://icaroferre.com",
+	type = "website",
+} = Astro.props;
+---
+
+<SEO
+	title={title}
+	description={description}
+	openGraph={{
+		basic: {
+			title,
+			type,
+			image,
+			url,
+		},
+		optional: {
+			description,
+		},
+	}}
+	twitter={{
+		card: "summary_large_image",
+		title,
+		description,
+		image,
+	}}
+/>

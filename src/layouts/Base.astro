@@ -3,11 +3,23 @@ import "../styles/globals.css";
 import Navigation from "../components/Navigation.astro";
 import Content from "../components/Content.astro";
 import Footer from "../components/Footer.astro";
+import Seo from "../components/Seo.astro";
 import { Font } from "astro:assets";
+
 interface Props {
-	children: any;
+	title: string;
+	seo?: {
+		title?: string;
+		description?: string;
+		image?: string;
+		url?: string;
+		type?: string;
+	};
 }
-const { title, children } = Astro.props;
+
+const { title, seo } = Astro.props;
+
+let page_title = "Icaro Ferre - " + title;
 ---
 
 <html lang="en">
@@ -26,7 +38,9 @@ const { title, children } = Astro.props;
 			type="text/css"
 			href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
 		/>
-		<title>Icaro Ferre - {title}</title>
+		<Seo {...seo} />
+		<title>{page_title}</title>
+
 		<Font cssVariable="--font-header" preload />
 		<Font cssVariable="--font-body" preload />
 	</head>

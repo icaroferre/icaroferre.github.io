@@ -7,7 +7,16 @@ import LinkCard from "../components/LinkCard.astro";
 const projects = await getCollection("projects");
 ---
 
-<BaseLayout title="Projects">
+<BaseLayout
+	title="Projects"
+	seo={{
+		title: "Projects - Icaro Ferre",
+		description:
+			"Check out some projects created by Icaro Ferre, an electronic artist and maker from São Paulo, Brazil",
+		image: "https://icaroferre.com/images/ngen/06.jpg",
+		url: "https://icaroferre.com/projects",
+	}}
+>
 	<a href="https://spektroaudio.com/projects" class="font-black">
 		<div
 			class="bg-[url(/images/ngen/04.jpg)] m-4 h-40 bg-center bg-cover flex flex-col items-center justify-center rounded-lg outline-1 outline-white/20"
