@@ -105,7 +105,6 @@ li::before {
 }
 
 .crop-2x1 {
-  width: 600px;
   aspect-ratio: 16 / 9; /* Keeps height at half the width */
   object-fit: cover; /* Crops the image while maintaining aspect ratio */
   object-position: center; /* Centers the crop */

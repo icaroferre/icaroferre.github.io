@@ -5,32 +5,30 @@ import PageHeader from "../components/PageHeader.astro";
 ---
 
 <BaseLayout title="">
-	<div class="grid grid-cols-2 gap-8">
-
+	<div class="grid grid-cols-2 xl:grid-cols-4 gap-8">
 		<LinkCard
 			title="About"
 			url="/about"
 			description="About me"
-			image=/images/LiveModular_1.jpg
+			image="/images/LiveModular_1.jpg"
 		/>
 		<LinkCard
 			title="Music"
 			url="/music"
 			description="My latest music releases"
-			image=/images/FractionsFragments.jpg
+			image="/images/FractionsFragments.jpg"
 		/>
 		<LinkCard
 			title="Projects"
 			url="/projects"
 			description="Check out some of my projects"
-			image=/images/ngen/06.jpg
+			image="/images/ngen/06.jpg"
 		/>
 		<LinkCard
 			title="Spektro Audio"
 			url="https://spektroaudio.com"
 			description="Music Tech Company based in São Paulo / Brazil"
-			image=/images/ngen/02.jpg
-			
+			image="/images/ngen/02.jpg"
 		/>
 	</div>
 </BaseLayout>
