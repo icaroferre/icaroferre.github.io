@@ -8,18 +8,16 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss(), react()],
   },
-  experimental: {
-    fonts: [
-      {
-        provider: fontProviders.google(),
-        name: "Montserrat",
-        cssVariable: "--font-body",
-      },
-      {
-        provider: fontProviders.google(),
-        name: "Montserrat",
-        cssVariable: "--font-header",
-      },
-    ],
-  },
+  fonts: [
+    {
+      provider: fontProviders.google(),
+      name: "Montserrat",
+      cssVariable: "--font-body",
+    },
+    {
+      provider: fontProviders.google(),
+      name: "Montserrat",
+      cssVariable: "--font-header",
+    },
+  ],
 });
