@@ -35,10 +35,10 @@ const projects = await getCollection("projects");
 		{
 			projects
 				.sort((a, b) => b.data.year - a.data.year)
-				.map(({ data, slug }) => (
+				.map(({ data, id }) => (
 					<LinkCard
 						title={data.title}
-						url={`/projects/${slug}/`}
+						url={`/projects/${id}/`}
 						image={data.front_image}
 						description={data.excerpt}
 					/>
